@@ -4,7 +4,7 @@ title : "인텔리제이 단축키 정리"
 ---
 
 # 인텔리제이 단축키
-![shortcut](/Users/kim/Desktop/dbgys1127-github-blog/dbgys1127.github.io/images/2022-07-24-ItellijShortKey/shortcut.jpeg)
+![shortcut](../images/2022-07-24-ItellijShortKey/shortcut-2844804.jpeg)
 
 1. 포커스 이동
 
