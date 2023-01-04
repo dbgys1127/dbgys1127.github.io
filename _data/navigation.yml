@@ -1,17 +1,19 @@
 # main links
-main:
+sidebar-category:
   - title: "Category"
-    url: /categories/
-  - title: "Tag"
-    url: /tags/
-
-docs:
-  - title: "대목차"
     children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+      - title: "Tip"
+        url: "/tip"
+        category: "tip"
+        
+      - title: "Java"
+        url:  "/java"
+        category: "java"
+
+      - title: "CS"
+        url:  "/cs"
+        category: "cs"
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

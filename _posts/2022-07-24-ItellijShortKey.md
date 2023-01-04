@@ -1,16 +1,13 @@
 ---
 layout : single
 title : "인텔리제이 단축키 정리"
-categories : Tip
-tag: [intellij, tool]
+categories : tip
 toc: true
 author_profile: false
-sidebar:
-    nav: "docs"
 ---
 
 # 인텔리제이 단축키
-<img src="../images/2022-07-24-ItellijShortKey/shortcut-2844804.jpeg" alt="shortcut" style="zoom: 200%;" />
+
 
 1. 포커스 이동
 
