@@ -1,14 +1,14 @@
 ---
 layout : single
 title : "마크다운 작성법 정리"
-categories : tip
+categories : [tip]
 toc: true
 author_profile: false
 ---
 
 # 1. 헤더(HEADERS)
 
-- 큰제목 : 문서 제목  12  ddd
+- 큰제목 : 문서 제목 
     문서의 제목을 표시 할때는 `===`을 사용.
     ```
     Title
@@ -16,7 +16,6 @@ author_profile: false
     ```
     Title
     ===
-    </br>
     
 - 작은제목 : 문서 부제목    
     문선의 부제목을 표기 시 `---`을 기입.
@@ -24,10 +23,9 @@ author_profile: false
     Sub title
     ---
     ```
-    Sub titleddd
+    Sub title
     ---
-    </br>
-
+    
 - 글머리: #의 개수에 따라, 1~6까지 크기를 제공하며, 개수가 작을수록 큰글씨다.    
     ```
     # 1단계
@@ -43,8 +41,11 @@ author_profile: false
     #### 4단계
     ##### 5단계
     ###### 6단계
-    </br>
+
+
+
 # 2. 인용
+
 인용이나, 제목에 대한 간단한 설명을 하고 싶다면, `>`를 사용한다.
 ```
 > 잠은 죽어서 자면 된다.
@@ -54,10 +55,11 @@ author_profile: false
 > 잠은 죽어서 자면 된다.
 >> 성인은 하루 7시간 이상 수면시간이 필요하다.
 >>> 어쩌라는거야?
-</br>
+
 
 
 # 3. 목록
+
 순서 있는 목록은 `숫자 + .`을 사용한다.
 ```
 1. 첫번째
@@ -110,12 +112,12 @@ author_profile: false
 
 `참고`로 혼합도 가능하다.
 
-</br>
+
 
 # 4. 코드블럭
 백킥 `(~표시 아래)을 " ``` " 형태로 원하는 코드를 감싸면 블럭이 생긴다. 또한  시작점에 언어를 선언하면 문법 강조가 된다.
 
-```Java
+```java
 public class BootSpringBootApplication{
     public static void main(String[] args){
         System.out.println("Hello, world");
@@ -123,7 +125,7 @@ public class BootSpringBootApplication{
 }
 ```
 
-</br>
+
 
 # 5. 수평선
 아래 기호는 모드 수평선을 만들 수 있다. 페이지 나눌 때, 유용하다.
@@ -140,7 +142,7 @@ public class BootSpringBootApplication{
 *****
 - - -
 ----------------
-</br>
+
 
 # 6. 링크
 - 하이퍼링크처럼 문자에 링크를 바로 입히고 싶을때, `[링크 제목]+(주소)` 형태로 쓰면 된다.
@@ -155,7 +157,7 @@ public class BootSpringBootApplication{
     ```
     외부링크: <https://www.naver.com/>
 
-</br>
+
 
 # 7. 강조
 ```
@@ -173,26 +175,24 @@ __볼드__
 ~~선긋기~~    
 ***기울이고 볼드***
 
-</br>
+
 
 # 9. 이미지
 이미지를 삽입할때는 `![이미지 설명]+(경로)`
 ```
 ![캡쳐](image/wallpaper.png)
 ```
-![wallpaper](../images/2022-07-24-Markdown-Practice/wallpaper.png)
+![wallpaper](/assets/images/markdown/wallpaper.png)
 
-![battery](../images/2022-07-24-Markdown-Practice/battery.png)
+![battery](/assets/images/markdown/battery.png)
 
 크기를 조정하고 싶다면?
 ```
 <img src="image/battery.png" width="450px" height="300px"></img><br/>
 <img src="image/wallpaper.png" width="40%" height="30%"></img><br/>
 ```
-<img src="../images/2022-07-24-Markdown-Practice/wallpaper.png" width="450px" height="300px"></img><br/>
-<img src="../images/2022-07-24-Markdown-Practice/battery.png" width="450px" height="300px"></img><br/>
 
-</br>
+
 
 # 10. 줄 바꿈
 `3칸` 혹은 `Tab`키를 입력 후 `enter`를 눌러야 줄이 바뀐다.
@@ -203,49 +203,9 @@ __볼드__
 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.  
 이렇게
 
-</br>
 
-# 11. 표
-표를 만들기 위해서는 `|내용|` 형태로 만들면 된다.
-```
-|순위|로고|팀|승점|
-|--|--|--|--|
-|1|이미지|ManCity|70|
-```
-|순위|로고|팀|승점|
-|--|--|--|--|
-|1|이미지|ManCity|70|
-
-또한 `:`을 어디 붙히냐에 따라 좌, 우, 가운데 정렬이 가능하다.
-```
-|순위|로고|팀|승점|
-|--:|:--|:--:|:--|
-|1|이미지|ManCity|70|
-```
-|순위|로고|팀|승점|
-|--:|:--|:--:|:--|
-|1|이미지|ManCity|70| 
-
-끝으로, 이미지를 넣고 싶다면, 해당 칸에 `|![이미지 성명]+(링크)|`를 기입하면 된다.
-
-```
-|순위|로고|팀|승점|
-|:--:|:--:|:--:|:--:|
-|1|![시티](image/city.png)|ManCity|70|
-|2|![리버풀](image/liverpool.png)|Liverpool|69|
-|3|![첼시](image/chel.png)|Chelsea|59|
-
-
-```
-|순위|로고|팀|승점|
-|:--:|:---|:--:|:--:|
-|1|![시티](../images/2022-07-24-Markdown-Practice/city.png)|ManCity|70|
-|2|![리버풀](../images/2022-07-24-Markdown-Practice/liverpool.png)|Liverpool|69|
-|3|![첼시](../images/2022-07-24-Markdown-Practice/chel.png)|Chelsea|59|
-
-</br>
 
 ## 참고
 이 글은 다음과 같은 글 및 영상을 따라해서 작성했습니다.
-1. :+1: **ihoneymon** 님의 [마크다운 작성법](https://bit.ly/3DmvDvQ)
-2. :+1: **유튜버 드림코딩 by엘리**님의 [마크다운(Markdown) 6분 순삭 정리 + 깃허브 리드미(ReadMe) 파일 작성 팁](https://bit.ly/35rUS3C) 
+1. **ihoneymon** 님의 [마크다운 작성법](https://bit.ly/3DmvDvQ)
+2. **유튜버 드림코딩 by엘리**님의 [마크다운(Markdown) 6분 순삭 정리 + 깃허브 리드미(ReadMe) 파일 작성 팁](https://bit.ly/35rUS3C) 
